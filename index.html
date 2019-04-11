@@ -18,6 +18,6 @@
   firebase.initializeApp(config);
   var chico= document.getElementById('chachi');
   var ref= firebase.database().ref().child('text');
-  ref.on('value', snap=> bigOne.innerText=snap.val());
+  ref.on('value', snap=> chico.innerText=snap.val());
 </script>
   </body>
