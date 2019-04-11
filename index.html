@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title> Welcome</title>
+  </head>
+  <body>
+    <h1 id="chachi"></h1>
+<script src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCELzJ67A2wtip9eNOa8GE6hdbjSgkQfoc",
+    authDomain: "steel-ace-237315.firebaseapp.com",
+    databaseURL: "https://steel-ace-237315.firebaseio.com",
+    projectId: "steel-ace-237315",
+    storageBucket: "steel-ace-237315.appspot.com",
+    messagingSenderId: "998808689711"
+  };
+  firebase.initializeApp(config);
+  var chico= document.getElementById('chachi');
+  var ref= firebase.database().ref().child('text');
+  ref.on('value', snap=> bigOne.innerText=snap.val());
+</script>
+  </body>
