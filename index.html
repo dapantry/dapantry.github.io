@@ -18,9 +18,8 @@
     messagingSenderId: "998808689711"
   };
   firebase.initializeApp(config);
-  var chico= document.getElementById('chachi');
-  var ref= firebase.database().ref().child('text');
-  ref.on('value', snap => chico.innerText = snap.val());
+  <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-firestore.js"></script>
 </script>
   </body>
 </html>
