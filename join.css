@@ -1,0 +1,9 @@
+body{
+  text-align:center;
+}
+.address input{
+  width:280px;
+  padding: 5px 0px;
+   border-radius:3px;
+  color:white;
+}
