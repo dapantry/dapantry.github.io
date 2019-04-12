@@ -1,0 +1,36 @@
+body{
+ font-family: 'Catamaran', sans-serif; 
+}
+.title{
+  text-align: center;
+}
+.nav{
+  height:100%; /*or 100px*/
+  width:0;
+  position:fixed;
+  z-index: 1;
+  top:0;
+  left:0;
+  background-color:#FF473A;
+  opacity:.9;
+  overflow-x:hidden;
+  padding-top: 60px;
+  transition:0.7s;
+}
+.nav ul{
+ padding:0; 
+}
+.nav li:hover{
+  border-left: 6px solid #661c17;
+  background-color:#ff8a82;
+}
+.nav a{
+  display: block;
+  padding:20px 30px; 
+  color: #000000;
+  text-decoration: none;
+}
+.para{
+  margin:5% 15% 65% 15%;
+  font-size: 25px;
+}
