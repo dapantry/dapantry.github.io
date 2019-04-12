@@ -1,90 +1,20 @@
 <!DOCTYPE html>
-<html lang="en" >
-
-<head>
-  <meta charset="UTF-8">
-  <title>new_spot.html</title>
-  
-  
-  
-      <link rel="stylesheet" href="css/style.css">
-
-  
-</head>
-
-<body>
-
-  <!DOCTYPE html>
 <html>
-  <head></head>
-  <title> Create A New Spot</title>
-  <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script>
-<script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-firestore.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyCELzJ67A2wtip9eNOa8GE6hdbjSgkQfoc",
-    authDomain: "steel-ace-237315.firebaseapp.com",
-    databaseURL: "https://steel-ace-237315.firebaseio.com",
-    projectId: "steel-ace-237315",
-    storageBucket: "steel-ace-237315.appspot.com",
-    messagingSenderId: "998808689711"
-  };
-  firebase.initializeApp(config);
-    </script>
-    <script>
-    // Initialize Cloud Firestore through Firebase
-var db = firebase.firestore();
-    </script>
-  <body>
-    <h1> Create a New Spot </h1>
-    <h2> Before creating a new spot, please go to Join a Spot and search if it exist. </h2>
-    <h7 class="address"> Commonly Known Name</h7>
-    </br> </br> 
-<h8> Name </h8>
-</br>
-    <input type="text" name="" value="" placeholder="Enter Name of Spot" id="name_text">
-    </br> </br> </br>
-    <h7 class="address"> Address </h7>
-    </br>   </br>
-    <h8> Street </h8>
-<div class="street">
-  <input type="text" name="" value="" placeholder="Enter Street Address" id="street_text">
-</div>
-</br>
- <h7>City</h7>
-</br>
-<input type="text" name="" value="" placeholder="Enter City" id="city_text">
-</br>  </br>
-<h7> State </h7>
-</br>
-<input type="text"name="" value=""
-placeholder="Enter State"id="state_text">
-</br>  </br>
-<h7> Zip Code</h7>
-</br>
-<input type="text"name="" value=""
-placeholder="Enter Zip Code"id="zip_text">
-</br> </br>
-<div id="button"class="button">
-<a href="button" onclick="storeInfo()">Submit</a>
-<!--  After clicked, Submission has been registered--> 
-</div>
-<div class="main-list" id="list_div">
-  <div class="list-item">
-    
-  <script src="new_spot.js"></script>
-</body>
-</html>
-  
-  
-
-    <script  src="js/index.js"></script>
-
-
-
-
-</body>
-
+  <head>
+  <title> Join A New Spot</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+  <link rel="stylesheet" type "text/css" href="styles.css">
+  <script src="new-spot.js></script>
+  <body> 
+    <h1> Join A New Spot </h1>
+    <h2> Use the search bar to find a spot to join </h2>
+    <div class="address">
+    <input type="text" name="" value="" placeholder="Enter the Address of the Spot you want to Join">
+      <a class="button" href="#">
+        <i class="fas fa-search"></i>
+      </a>
+      <!-- When spot clicked, it will be added to My Spots, thus redirected to spots -->
+    </div>
+  </body>
 </html>
