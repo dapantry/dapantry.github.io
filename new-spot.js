@@ -11,7 +11,7 @@ function storeInfo(){
   var cityText= document.getElementById("city_text").value;
    var stateText= document.getElementById("state_text").value;
   var zipText= document.getElementById("zip_text").value;
-db.collection("User_Data").doc("Spots").set({
+db.collection("User_Data").doc().set({
     name: nameText,
     street: streetText,
     city:cityText,
@@ -19,7 +19,7 @@ db.collection("User_Data").doc("Spots").set({
     zip: zipText
 })
 .then(function() {
-    window.alert("Document successfully written!");
+    window.alert("Submission has been successfully processed!");
 })
 .catch(function(error) {
     window.alert("Error writing document: ", error);
