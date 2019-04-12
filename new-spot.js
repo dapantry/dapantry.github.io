@@ -14,14 +14,14 @@ function storeInfo(){
 db.collection("User_Data").doc("Spots").set({
     name: nameText,
     street: streetText,
-    city:zipText,
+    city:cityText,
     state:stateText,
     zip: zipText
 })
 .then(function() {
-    console.log("Document successfully written!");
+    window.alert("Document successfully written!");
 })
 .catch(function(error) {
-    console.error("Error writing document: ", error);
+    window.alert("Error writing document: ", error);
 });
 }
