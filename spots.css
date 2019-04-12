@@ -1,0 +1,16 @@
+.address{
+  color: #FF473A;
+}
+.button{
+  display: inline-block;
+  background: #FF473A;
+  padding: 9px 1px;
+  width:80px;
+  margin-top:10px;
+  text-align:center;
+  text-transform: uppercase;
+  border-radius:8px;
+}
+ .button a{
+  text-decoration: none; 
+}
