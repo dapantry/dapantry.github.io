@@ -1,3 +1,17 @@
+ <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-firestore.js"></script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCELzJ67A2wtip9eNOa8GE6hdbjSgkQfoc",
+    authDomain: "steel-ace-237315.firebaseapp.com",
+    databaseURL: "https://steel-ace-237315.firebaseio.com",
+    projectId: "steel-ace-237315",
+    storageBucket: "steel-ace-237315.appspot.com",
+    messagingSenderId: "998808689711"
+  };
+  firebase.initializeApp(config);
+    // Initialize Cloud Firestore through Firebase
 var db = firebase.firestore();
 const spotsList= document.querySelector('#spots-list');
 function renderNames(doc){
