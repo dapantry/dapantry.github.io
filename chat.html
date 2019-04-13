@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title> Create A New Spot</title>
+  <link rel="stylesheet" href="css/spots.css">
+  <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-firestore.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCELzJ67A2wtip9eNOa8GE6hdbjSgkQfoc",
+    authDomain: "steel-ace-237315.firebaseapp.com",
+    databaseURL: "https://steel-ace-237315.firebaseio.com",
+    projectId: "steel-ace-237315",
+    storageBucket: "steel-ace-237315.appspot.com",
+    messagingSenderId: "998808689711"
+  };
+  firebase.initializeApp(config);
+    </script>
+  <script>
+    // Initialize Cloud Firestore through Firebase
+var db = firebase.firestore();
+    </script>
+    </head>
+  <body>
+    <div>
+      <h1> Welcome to the Chat!</h1> 
+      <input type="text" placeholder="Enter Message" id="message_text">
+      <button id="submit" onclick="storeData()">Submit</button>
+    </div>
+    <div class="main-list" id="list_div">
+  <div class="list-item">
+    </div>
+</div>
+</body>
+</html>
