@@ -1,3 +1,4 @@
+var db = firebase.firestore();
 const spotsList= document.querySelector('#spots-list');
 function renderNames(doc){
  let li= document.createElement('li');
